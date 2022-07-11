@@ -1,0 +1,209 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: mediumspringgreen; }
+
+h1 {
+  margin: 0.9px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic; }
+
+h2 {
+  text-align: start;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+h3 {
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  text-align: center; }
+
+h4 {
+  text-align: center; }
+
+nav {
+  margin: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: end;
+  border: outset lightblue; }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: lightblue; }
+  nav li {
+    font-size: large;
+    margin: 0.5px;
+    padding: 0.3px;
+    text-align: center; }
+
+.navbar-brand {
+  font-size: x-large; }
+
+.mainIndex {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-areas: "h2Index imgIndex" "pIndex pIndex";
+  justify-items: center; }
+
+.imgIndex {
+  grid-area: imgIndex;
+  margin: 2.5rem;
+  justify-self: center;
+  display: none; }
+
+.h2Index {
+  grid-area: h2Index;
+  text-align: center; }
+
+.pIndex {
+  grid-area: pIndex;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: 200; }
+
+.mainCombos {
+  grid-template-areas: "h2Combos" "tableCombos";
+  justify-items: center; }
+
+.h2Combos {
+  grid-area: h2Combos;
+  text-align: center; }
+
+.manito {
+  margin: 30px; }
+
+.imgCombos {
+  display: none;
+  height: 260px;
+  justify-content: center;
+  margin-top: 170px; }
+
+@media screen and (min-width: 600px) {
+  .imgIndex {
+    display: block; }
+  .imgCombos {
+    display: flex; } }
+
+li:hover {
+  transform: scale(1.1); }
+
+.animacionIndex {
+  animation-name: indexAnimacion;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes indexAnimacion {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+
+.animacionCombos {
+  animation-name: combosAnimacion;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes combosAnimacion {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+
+h1:hover {
+  transform: rotate(180deg); }
+
+.card-img-top {
+  width: 28vh;
+  height: 28vh; }
+
+.cardCombos {
+  display: flex;
+  justify-content: space-evenly; }
+
+.cardPromos {
+  display: flex;
+  justify-content: space-evenly; }
+
+.mainDelivery {
+  display: grid;
+  grid-template-areas: "h2Delivery h2Delivery" "logoWhatsapp parrafoD"; }
+
+.h2Delivery {
+  grid-area: h2Delivery; }
+
+.logoWhatsapp {
+  grid-area: logoWhatsapp;
+  margin-left: 10%;
+  margin-right: 50px;
+  width: 130px;
+  height: 130px; }
+
+.parrafoD {
+  margin-right: 50px;
+  grid-area: parrafoD;
+  color: orange;
+  font-size: large;
+  text-align: justify; }
+
+.insta {
+  text-decoration: none;
+  color: orange;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large; }
+
+.logoIsnta {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-self: center; }
+
+.mainContact {
+  display: grid;
+  grid-template-areas: "h2Contact h2Contact" "buttonContact formContact"; }
+
+.h2Contact {
+  grid-area: h2Contact; }
+
+.buttonContact {
+  grid-area: buttonContact;
+  width: fit-content;
+  margin-left: 10%; }
+
+.aContact {
+  justify-self: center; }
+
+.pContact {
+  color: orange;
+  text-align: center;
+  width: 50%; }
+
+.formContact {
+  background-color: black;
+  border: 3px solid darkorange;
+  margin-right: 10px;
+  width: max-content;
+  grid-area: formContact;
+  display: flex;
+  justify-content: center; }
+  .formContact fieldset legend {
+    margin-left: 10px;
+    color: orange; }
+  .formContact fieldset div {
+    justify-items: center; }
+    .formContact fieldset div label {
+      width: 120px;
+      height: 10px;
+      color: orange; }
+    .formContact fieldset div input {
+      margin: 5px; }
