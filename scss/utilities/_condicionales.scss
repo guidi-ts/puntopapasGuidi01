@@ -1,0 +1,11 @@
+@mixin condicion ($color-secundario){
+    background-color: $color-secundario;
+
+    @if $color-secundario == black{
+        border: 3px solid darkorange;
+    }
+
+    @else {
+        border: 3px solid black;
+    }
+}
